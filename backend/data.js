@@ -1,0 +1,73 @@
+import bcrypt from 'bcryptjs';
+const data = {
+  users: [
+    {
+      name: 'Malick',
+      email: 'admin@gmail.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'Modou',
+      email: 'user@gmail.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      //_id: '1',
+      name: 'Naruto',
+      slug: '1',
+      category: 'Clothes',
+      image: '/images/img1.png',
+      price: 1500,
+      countInStock: 10,
+      brand: 'Naruto',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    },
+    {
+      //_id: '2',
+      name: 'Buruto',
+      slug: '2',
+      category: 'Clothes',
+      image: '/images/img2.png',
+      price: 1500,
+      countInStock: 0,
+      brand: 'Naruto',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    },
+    {
+      //_id: '3',
+      name: 'Daruto',
+      slug: '3',
+      category: 'Clothes',
+      image: '/images/img3.png',
+      price: 1500,
+      countInStock: 10,
+      brand: 'Naruto',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    },
+    {
+      // _id: '4',
+      name: 'Maruto',
+      slug: '4',
+      category: 'Clothes',
+      image: '/images/img4.png',
+      price: 1500,
+      countInStock: 10,
+      brand: 'Naruto',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    },
+  ],
+};
+
+export default data;
